@@ -1,0 +1,10 @@
+{
+  "libs": ["browser","ecma5","ecma6"],
+  "loadEagerly": ["./**/*.js"],
+   "plugins": {
+        "node": {},
+        "modules": {},
+        "es_modules": {}
+    },
+    "ecmaVersion": 6
+}
