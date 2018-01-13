@@ -13,7 +13,7 @@ class Main {
     }
 
     view({attrs}) {
-        return m('#main', attrs, "Hello world")
+        return m('#main.text-5xl.text-yellow.hover:text-purple.font-sans.p-5', attrs, "Hello world")
     }
 
     oncreate({attrs, state}) {

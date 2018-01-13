@@ -18,8 +18,8 @@
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.37",
     "@babel/preset-env": "^7.0.0-beta.37",
+    "autoprefixer": "^7.2.5",
     "babel-loader": "8.0.0-beta.0",
-    "webpack": "^3.10.0",
     "clean-webpack-plugin": "^0.1.17",
     "css-hot-loader": "^1.3.5",
     "css-loader": "^0.28.8",
@@ -30,8 +30,13 @@
     "html-loader": "^0.5.4",
     "html-webpack-plugin": "^2.30.1",
     "mopt": "^5.1.1",
+    "postcss": "^6.0.16",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-loader": "^2.0.10",
     "style-loader": "^0.19.1",
+    "tailwindcss": "^0.4.0",
     "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack": "^3.10.0",
     "webpack-dev-server": "^2.10.1",
     "webpack-merge": "^4.1.1"
   }

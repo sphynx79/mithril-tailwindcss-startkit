@@ -9,7 +9,7 @@ class Layout {
     }
 
     view({attrs, state}) {
-        return m("#layout", [
+        return m("#layout", {class: "min-h-screen flex items-center justify-center bg-blue"}, [
             // m(attrs.sidebar, {class: (appState.sidebar ? "active" : "") + " " }),
             m(attrs.main, {onclick: () => {console.log("Hello from main")}}),
         ])

@@ -50,7 +50,7 @@ module.exports = {
                 loader: 'babel-loader',
                 options: {
                     presets: ['@babel/preset-env'],
-                    plugins: [ 'module:mopt' ]
+                    plugins: ['module:mopt']
                 },
             }],
         }],

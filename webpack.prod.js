@@ -9,13 +9,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = merge(common, {
     devtool: 'hidden-source-map',
     module: {
-        noParse: /(mapbox-gl)\.js$/,
         rules: [{
-            test: /(\.css|\.scss)$/,
+            test: /\.css$/,
             use: ExtractTextPlugin.extract({
-                use: [{
-                    loader: 'css-loader',
-                }],
+                fallback: 'style-loader',
+                use: [{ loader: 'css-loader', options: { importLoaders: 1 } }, 'postcss-loader'],
             }),
         }],
     },

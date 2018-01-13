@@ -19,15 +19,12 @@ module.exports = merge(common, {
     },
     module: {
         rules: [{
-            test: /(\.css|\.scss)$/,
+            test: /\.css$/,
             use: [{
                 loader: 'css-hot-loader',
             }].concat(ExtractTextPlugin.extract({
-                use: [{
-                    loader: 'css-loader',
-                }],
-                // use style-loader in development
                 fallback: 'style-loader',
+                use: [{ loader: 'css-loader', options: { importLoaders: 1} }, 'postcss-loader'],
             })),
         }, 
         //     {
